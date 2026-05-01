@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>port</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&amp;family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!-- ============================================================
+     CODEPEN SETUP — Add these in CodePen Settings:
+     
+     CSS > Add External Stylesheet:
+       https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap
+
+     JS > Add External Script:
+       https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js
+============================================================ -->
+
+<div class="swirl-bg"></div>
+<div class="crow-rain-container" id="crow-rain"></div>
+
+<div class="page-content">
+
+  <nav>
+    <div class="nav-logo">
+      <span>🐦‍⬛</span> Portfolio
+    </div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#game">Game</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-controls">
+      <button class="btn-icon" id="theme-btn" title="Toggle dark/light mode">🌙</button>
+      <button class="btn-icon" id="crow-btn" title="Secret crow button!">🐦‍⬛</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="profile-wrap">
+        <div class="profile-ring">
+          <div class="profile-inner">
+            <img id="profile-img" src="https://avatars.githubusercontent.com/u/254918848?s=400&u=a95d7005c43e7d858164ab3b837149c54184818d&v=4" alt="Profile" />
+          </div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">✦ Student Developer Portfolio ✦</p>
+        <h1><span style="color:var(--teal)">The Crow Land</span></h1>
+        <p class="subtitle">Coder &nbsp;·&nbsp; Designer &nbsp;·&nbsp; Problem Solver</p>
+        <p class="intro">
+          Welcome to my portfolio. I'm a student passionate about
+          <strong style="color:var(--teal)">Technology, Robotics, and Arts</strong>
+         . I also build projects that mix logic with creativity —
+          from games to robots.
+        </p>
+        <div class="hero-badges">
+          <span class="badge teal">🎮 Game Dev</span>
+          <span class="badge gold">🤖 Robotics</span>
+          <span class="badge">🐍 Python</span>
+          <span class="badge">☕ Java</span>
+          <span class="badge">🔩 C++</span>
+          <span class="badge">🌐 Web Dev</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="section-divider"></div>
+
+  <section id="about">
+    <div class="container">
+      <p class="section-label">// who am I</p>
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>My name is <strong>Ian</strong>, and I'm a student interested in <strong>Robotics, Studies</strong> and <strong>Creative Technology</strong>.</p>
+          <p>I got into coding ultimately through <strong>Videos and Scratch</strong>, and since then I've worked with <strong>Python</strong>, <strong>Java</strong>, <strong>C++</strong>, and <strong>Web Technologies</strong> like this one right here.</p>
+          <p>When I'm not coding I enjoy playing <strong>Futbol</strong> with friends and enjoy <strong>Gaming</strong> like any other student in this school. I’ve gone with a <strong>Crow</strong> theme for this project. Beyond just liking the design, it’s their <strong>Inherent Silliness</strong> that gives this website its <strong>Unique Character</strong>. 🐦‍⬛</p>
+        </div>
+        <div class="about-facts">
+          <h3>// Quick Facts</h3>
+          <div class="fact-row"><span class="fact-icon">📍</span><span class="fact-label">Location</span><span class="fact-val">Houston, TX</span></div>
+          <div class="fact-row"><span class="fact-icon">🏫</span><span class="fact-label">School</span><span class="fact-val">The Village School</span></div>
+          <div class="fact-row"><span class="fact-icon">🎓</span><span class="fact-label">Grade</span><span class="fact-val">Grade 8/Year 9</span></div>
+          <div class="fact-row"><span class="fact-icon">💡</span><span class="fact-label">Fav Language</span><span class="fact-val">Java, for now</span></div>
+          <div class="fact-row"><span class="fact-icon">🤖</span><span class="fact-label">FTC Team</span><span class="fact-val">FTC Team #30615</span></div>
+          <div class="fact-row"><span class="fact-icon">🎯</span><span class="fact-label">Learning Next</span><span class="fact-val">More Coding, More School</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="projects">
+    <div class="container">
+      <p class="section-label">// what I've built</p>
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+
+        <div class="project-card fade-in">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem">
+            <h3>🔪 Knife Hit Clone</h3>
+            <span class="status-badge status-done">✓ Done</span>
+          </div>
+          <p>A recreation of Knife Hit built in CodeTorch. Spinning logs, precise timing, and satisfying knife throws — fully playable!</p>
+          <div class="project-meta">
+            <span class="tag lang">CodeTorch</span>
+            <span class="tag">Game Dev</span>
+            <span class="tag">Physics</span>
+          </div>
+          <div class="project-footer">
+            <a class="btn-link" href="https://codetorch.net/en/projects/70795?accessKey=EEbXIjIO7tfPhJeCYP7hPEMt46JlXegUt2e0XLwSG3M" target="_blank" title="View project">▶ Play / View</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem">
+            <h3>🌐 3D Simulation</h3>
+            <span class="status-badge status-draft">⏳ Draft</span>
+          </div>
+          <p>A 3D environment simulation built in CodeTorch — exploring 3D space, movement and mechanics, and real-time rendering.</p>
+          <div class="project-meta">
+            <span class="tag lang">CodeTorch</span>
+            <span class="tag">3D</span>
+            <span class="tag">Simulation</span>
+          </div>
+          <div class="project-footer">
+            <a class="btn-link" href="https://codetorch.net/en/projects/72325?accessKey=OwEH0vgFadhNKY8mYGiQw3UUGRdgT0c63Vhbj_oiSq8" target="_blank">▶ ⏳ In Progress</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem">
+            <h3>🐦‍⬛ Flappy Bird</h3>
+            <span class="status-badge status-draft">⏳ Draft</span>
+          </div>
+          <p>A Scratch-built remake with custom sprites, realistic physics, and a theme built for this school.</p>
+          <div class="project-meta">
+            <span class="tag lang">Scratch</span>
+            <span class="tag">Game Dev</span>
+            <span class="tag">Animation</span>
+          </div>
+          <div class="project-footer">
+            <a class="btn-link disabled" href="#">🔒 In Progress</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem">
+            <h3>🧮 Auto Calculator</h3>
+            <span class="status-badge status-draft">⏳ Draft</span>
+          </div>
+          <p>A Python CLI calculator that auto-detects operation types — supports arithmetic, answer shortcuts, and smart terminal output. Codetorch is curently incompatable with my code, but it is still avaible for playing.</p>
+          <div class="project-meta">
+            <span class="tag lang">Python</span>
+            <span class="tag">CLI Tool</span>
+            <span class="tag">Math</span>
+          </div>
+          <div class="project-footer">
+            <a class="btn-link" href="https://codetorch.net/en/projects/73030?accessKey=1qJQd0Lb4Ew09PEipCipf_MkdqRO4k8eVKEz2Uwu7iM" target="_blank">▶ ⏳ In Progress</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem">
+            <h3>🤖 FTC Robot Programmer</h3>
+            <span class="status-badge status-done">✓ Active</span>
+          </div>
+          <p>Programmer on my school's FIRST Tech Challenge robotics team — started in blocks, but moved to autonomous and teleOp routines in Java.</p>
+          <div class="project-meta">
+            <span class="tag lang">Java</span>
+            <span class="tag">FTC Robotics</span>
+            <span class="tag">Autonomous</span>
+          </div>
+          <div class="project-footer">
+            <a class="btn-link disabled" href="#">🔒 Code Locked</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem">
+            <h3>📦 Arduino Cardboard Robot</h3>
+            <span class="status-badge status-done">✓ Done</span>
+          </div>
+          <p>Built and programmed a cardboard robot using Arduino Uno. Motors, wires, and wired control coded in C++ from scratch.</p>
+          <div class="project-meta">
+            <span class="tag lang">C++</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Hardware</span>
+          </div>
+          <div class="project-footer">
+            <a class="btn-link disabled" href="#">🔒 Code Unavailable</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in" style="border-color:rgba(37,99,235,0.4);background:linear-gradient(135deg,var(--card-bg),rgba(37,99,235,0.05));">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem">
+            <h3>🚀 More Coming Soon</h3>
+            <span class="status-badge status-future">✦ Future</span>
+          </div>
+          <p>Always building something new — game engines, robots, web apps, and more advanced tech. Stay tuned!</p>
+          <div class="project-meta">
+            <span class="tag">TBD</span>
+            <span class="tag">Many Languages</span>
+          </div>
+          <div class="project-footer">
+            <span style="font-size:0.78rem;color:var(--muted)">// watch this space</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="skills">
+    <div class="container">
+      <p class="section-label">// technical proficiency</p>
+      <h2>Skills</h2>
+      <p style="color:var(--muted);font-size:0.82rem;margin-top:1rem;font-style:italic">
+        My overal coding skill thorugh each programing language!
+      </p>
+      <div class="skills-container" id="skills-container"></div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="experience">
+    <div class="container">
+      <p class="section-label">// growth &amp; learning</p>
+      <h2>Experience</h2>
+      <div class="resume-box">
+        <h3>// Highlights</h3>
+        <ul>
+          <li>Built and published multiple game projects across CodeTorch, Scratch, and Python</li>
+          <li>Active member of FIRST Tech Challenge (FTC) robotics team — writing real competition code in Blocks and Java</li>
+          <li>Designed and programmed a physical Arduino Uno cardboard robot with C++ controller input</li>
+          <li>Learned to plan projects, debug systematically, and iterate through testing</li>
+          <li>Went on extracurricular actives like futbol, swimming, and tennis to build life skills and boost passions</li>
+          <li>Developed cross-language fluency: Scratch → Python → Java → C++ progression</li>
+          <li>Explored hardware/software integration through Arduino and FTC robotics platforms</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="game">
+    <div class="container">
+      <p class="section-label">// mini game</p>
+      <h2>Crow's Lucky Slots 🎰</h2>
+      <p style="color:var(--muted);font-size:0.85rem;margin-top:1rem">
+        Pull the golden lever and spin — match three to win!
+        Three crows = <strong style="color:var(--teal)">JACKPOT</strong> + confetti!
+        <br>
+       (This is not advertised gambling)
+      </p>
+      <div class="game-wrapper">
+        <div class="game-stats">
+          <div class="stat-box"><div class="stat-label">Spins</div><div class="stat-val" id="spin-count">0</div></div>
+          <div class="stat-box"><div class="stat-label">Wins</div><div class="stat-val" id="win-count">0</div></div>
+          <div class="stat-box"><div class="stat-label">Score</div><div class="stat-val" id="score-display">0</div></div>
+        </div>
+        <div class="slot-machine">
+          <div class="machine-body">
+            <div class="machine-top">
+              <h3>🐦‍⬛ Crow's Lucky Slots</h3>
+              <div class="jackpot-lights">
+                <div class="light" id="l0"></div><div class="light" id="l1"></div>
+                <div class="light" id="l2"></div><div class="light" id="l3"></div>
+                <div class="light" id="l4"></div><div class="light" id="l5"></div>
+                <div class="light" id="l6"></div>
+              </div>
+            </div>
+            <div class="reels-wrap">
+              <div class="reels-row">
+                <div class="reel-container"><div class="reel" id="reel-strip-0"></div></div>
+                <div class="reel-container"><div class="reel" id="reel-strip-1"></div></div>
+                <div class="reel-container"><div class="reel" id="reel-strip-2"></div></div>
+              </div>
+              <div class="win-line" id="win-line"></div>
+            </div>
+            <div class="machine-grill">
+              <div class="grill-dot"></div><div class="grill-dot"></div>
+              <div class="grill-dot"></div><div class="grill-dot"></div>
+              <div class="grill-dot"></div>
+            </div>
+          </div>
+          <div class="lever-wrap" id="lever" title="Pull to spin!">
+            <div class="lever-shaft"><div class="lever-ball"></div></div>
+            <div class="lever-base"></div>
+            <div class="lever-label">Pull!</div>
+          </div>
+        </div>
+        <div class="game-msg" id="game-msg">✦ Pull the lever to play! ✦</div>
+        <div class="paytable">
+          <h4>🏆 Pay Table</h4>
+          <div class="paytable-row"><span>🐦‍⬛🐦‍⬛🐦‍⬛  Three Crows</span><span style="color:var(--gold)">JACKPOT  +100</span></div>
+          <div class="paytable-row"><span>🎮🎮🎮  Triple Controller</span><span style="color:var(--teal)">BIG WIN  +50</span></div>
+          <div class="paytable-row"><span>🐐🐐🐐  Triple Goat</span><span style="color:var(--teal)">BIG WIN  +50</span></div>
+          <div class="paytable-row"><span>Any Three-of-a-Kind</span><span style="color:#aaa">WIN  +20</span></div>
+          <div class="paytable-row"><span>No Match</span><span style="color:#666">Try Again!</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="contact">
+    <div class="container">
+      <p class="section-label">// get in touch</p>
+      <h2>Contact &amp; Goals</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Thanks for visiting <strong>The Crow Land</strong>. Check out my <strong>GitHub</strong> and follow my journey in <strong>Coding</strong>, <strong>Robotics</strong>, and <strong>Future Projects</strong>.</p>
+          <div class="contact-item">
+            <span class="ci-icon">📧</span>
+            <div>
+              <div class="ci-label">School Email</div>
+              <div class="ci-val">Ian_Morillo@s.thevillageschool.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">💻</span>
+            <div>
+              <div class="ci-label">GitHub</div>
+              <div class="ci-val">
+  <a href="https://github.com/Ian7Git-Hub" target="_blank">My Ian7Git-Hub GitHub</a>
+</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">🏫</span>
+            <div>
+              <div class="ci-label">School</div>
+              <div class="ci-val">The Village School</div>
+            </div>
+          </div>
+        </div>
+        <div class="goals-box">
+          <h3>// Future Goals</h3>
+          <div class="goal-item"><span class="goal-num">01</span><span>Learn new languages and frameworks like Unity, C, and C#</span></div>
+          <div class="goal-item"><span class="goal-num">02</span><span>Ship more completed game projects and eventually publish them publicly</span></div>
+          <div class="goal-item"><span class="goal-num">03</span><span>Contribute to FTC robotics at a higher level and learn new skills in futbol</span></div>
+          <div class="goal-item"><span class="goal-num">04</span><span>Explore mutilple careers like computer scinece, business, and engineering</span></div>
+          <div class="goal-item"><span class="goal-num">05</span><span>Build something that genuinely helps people or makes them smile</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="crow-sig">🐦‍⬛</span>
+    Created by <strong>Ian</strong> &nbsp;·&nbsp; Student Developer Portfolio
+    &nbsp;·&nbsp; <span style="color:var(--gold)">Built with HTML, CSS &amp; JavaScript</span> &nbsp;·&nbsp; Updated in <span style="color:var(--teal)"> <strong>April 2026</strong>
+  </footer>
+
+</div>
+    <script src='https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js'></script><script  src="./script.js"></script>
+
+  </body>
+  
+</html>
